@@ -1,0 +1,5 @@
+Jinja2
+fabric
+
+-e git://github.com/juanique/artichoke.git#egg=artichoke
+-e git://github.com/juanique/python-webclient.git#egg=python-webclient

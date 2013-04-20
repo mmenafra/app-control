@@ -1,0 +1,8 @@
+if [ "$(uname -s)" = "Darwin" ]; then
+    sudo easy_install pip
+    sudo easy_install virtualenv
+else
+    yes | sudo apt-get install python-dev openssh-server python-pip python-virtualenv
+fi
+virtualenv env
+./env/bin/pip install --requirement ./requirements.pip
